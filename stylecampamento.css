@@ -1,0 +1,79 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+#descripcion {
+    color: #000000;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+#contenedor-1 {
+    width: 100vw;
+    height: 400px;
+    background-image: url("./img/portada%201.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+
+
+
+
+
+}
+
+
+#menu {
+    text-align: center;
+    background-color: #56dae4;
+    padding: 10px 0;
+}
+
+#lista-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #39a1e0;
+}
+
+.enlace-menu {
+    text-decoration: none;
+}

@@ -1,0 +1,91 @@
+:root{
+font-family: Arial, Helvetica;
+}
+
+body{
+background-color:#2feb6d ;
+}
+#titulo{
+text-align: center;
+color:#000;
+}
+
+#descripcion{
+color:#000;
+font-size: 18px;
+}
+#contenedor-1{
+width:100vw;
+height: 400px;
+background-image: url("./img/contactanos.jpg");
+background-repeat: no-repeat;
+background-size: cover;pg
+color:#fff;
+}
+
+#contenedor-2{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width:100vw;
+height: 400px;
+background-color:#22a14d;
+color:#fff;
+margin-top: 20px;
+margin-bottom:20px;
+}
+
+#contenedor-3{
+width:300px;
+height: 300px;
+background-color:#DF01D7;
+color:#fff;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 10px;
+background-image: url("./img/contacto.jfif");
+background-repeat: no-repeat;
+background-size: cover;
+}
+#contenedor-4{
+width:300px;
+height: 300px;
+background-color:#DF01D7;
+color:#fff;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 10px;
+background-image: url("./img/gmail");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#menu {
+    text-align: center;
+    background-color: #56dae4;
+    padding: 10px 0;
+}
+
+#lista-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #39a1e0;
+}
+
+.enlace-menu {
+    text-decoration: none;
+}

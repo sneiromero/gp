@@ -1,0 +1,47 @@
+:root{
+font-family: Arial, Helvetica;
+}
+
+body{
+background-color: #ffee8c;
+}
+#titulo{
+text-align: center;
+color:#fff;
+}
+
+#descripcion{
+color:#fff;
+font-size: 18px;
+}
+
+#contenedor-100 {
+    width: 100vw;
+    height: 400px; 
+    background-image: url("./img/123.png");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    color: #fff;
+}
+
+#menu{
+text-align:center;
+background-color:#ce55c8;
+}
+#lista-menu{
+display:flex;
+justify-content:center;
+gap:20px;
+color:#fff;
+padding-top:10px;
+padding-bottom:10px;
+list-style:none;
+}
+.menu-item{
+color:#ffffff;
+font-size: 18px;
+}
+.enlace-menu{
+text-decoration: none;
+}
