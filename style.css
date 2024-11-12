@@ -1,106 +1,495 @@
-:root {
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
+  background: #f3f4f6;
+  color: #333;
 }
 
-#titulo {
-    text-align: center;
-    color: #000000;
-    margin-top: 20px;
-    font-size: 2em;
+.header {
+  background: url('header-bg.jpg') no-repeat center center/cover;
+  color: green;
+  text-align: center;
+  padding: 2em 1em;
 }
 
-#descripcion {
-    color: #000000;
-    font-size: 18px;
-    max-width: 800px;
-    margin: 20px auto;
-    line-height: 1.6;
-    padding: 0 20px;
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
-#contenedor-1 {
-    width: 100vw;
-    height: 400px;
-    background-image: url("./img/portada%201.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+.section {
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #4a90e2;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section.overlay {
+  background: rgba(0, 123, 255, 0.05);
+  border-left: 5px solid #4a90e2;
+  margin: 2em 0;
+  padding: 2em 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1em 0;
+}
+
+.img1 {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1em 0;
+}
+
+.img1 {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1em 0;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+/* Estilos para la sección de Eventos y Festivales */
+#eventos {
+  background-color: #f9f9f9;
+  padding: 3em 1em;
+}
+
+#eventos h2 {
+  font-size: 2em;
+  color: #4a90e2;
+  margin-bottom: 1em;
+}
+
+#eventos p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 1.5em;
+}
+
+#eventos ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#eventos li {
+  background: #ffffff;
+  margin: 0.5em 0;
+  padding: 1em;
+  border-left: 4px solid #4a90e2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#eventos li:hover {
+  transform: translateY(-3px);
+}
+
+#eventos li strong {
+  color: #333;
+  font-size: 1.2em;
+}
+
+#eventos li p {
+  color: #666;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+/* Estilos para la sección Flora, Fauna y Veredas */
+#flora-fauna {
+  background-color: #eef3f9;
+  padding: 3em 1em;
+}
+
+#flora-fauna h2 {
+  font-size: 2em;
+  color: #4a90e2;
+  margin-bottom: 1em;
+}
+
+#flora-fauna .flora-fauna-section {
+  background-color: #ffffff;
+  padding: 1.5em;
+  margin: 1em 0;
+  border-left: 4px solid #4a90e2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#flora-fauna h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#flora-fauna p {
+  color: #555;
+  font-size: 1.1em;
+}
+
+#flora-fauna ul {
+  list-style-type: none;
+  padding-left: 1em;
+  margin-top: 0.5em;
+}
+
+#flora-fauna li {
+  margin: 0.5em 0;
+  font-size: 1.1em;
+}
+
+#flora-fauna li strong {
+  color: #333;
+}
+
+/* Estilos para la sección de Lugares Turísticos */
+#lugares-turisticos {
+  background-color: #f3f6fa;
+  padding: 3em 1em;
+}
+
+#lugares-turisticos h2 {
+  font-size: 2em;
+  color: #4a90e2;
+  margin-bottom: 1em;
+}
+
+#lugares-turisticos p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 1.5em;
+}
+
+#lugares-turisticos ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#lugares-turisticos li {
+  background: #ffffff;
+  margin: 0.5em 0;
+  padding: 1em;
+  border-left: 4px solid #4a90e2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#lugares-turisticos li:hover {
+  transform: translateY(-3px);
+}
+
+#lugares-turisticos li strong {
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* Estilos para la sección de Comidas Típicas */
+#comidas-tipicas {
+  background-color: #f3f6fa;
+  padding: 3em 1em;
+}
+
+#comidas-tipicas h2 {
+  font-size: 2em;
+  color: #d9534f;
+  margin-bottom: 1em;
+}
+
+#comidas-tipicas p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 1.5em;
+}
+
+#comidas-tipicas ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#comidas-tipicas li {
+  background: #ffffff;
+  margin: 0.5em 0;
+  padding: 1em;
+  border-left: 4px solid #d9534f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#comidas-tipicas li:hover {
+  transform: translateY(-3px);
+}
+
+#comidas-tipicas li strong {
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* Estilos para la sección de Planes Turísticos */
+#planes-turisticos {
+  background-color: #eaf4fc;
+  padding: 3em 1em;
+}
+
+#planes-turisticos h2 {
+  font-size: 2em;
+  color: #2c5f8a;
+  margin-bottom: 1em;
+}
+
+#planes-turisticos p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 1.5em;
+}
+
+#planes-turisticos .plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#planes-turisticos .plan {
+  background: #ffffff;
+  padding: 1.5em;
+  border-left: 4px solid #2c5f8a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#planes-turisticos .plan:hover {
+  transform: translateY(-3px);
+}
+
+#planes-turisticos h3 {
+  font-size: 1.5em;
+  color: #2c5f8a;
+  margin-bottom: 0.5em;
+}
+
+#planes-turisticos h4 {
+  font-size: 1.5em;
+  color: green;
+  margin-bottom: 0.5em;
+}
+
+#planes-turisticos p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+#planes-turisticos ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+#planes-turisticos li {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+#planes-turisticos .plan1 {
+  background: #ffffff;
+  padding: 1.5em;
+  border-left: 4px solid #2c5f8a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#planes-turisticos .plan1:hover {
+  transform: translateY(-3px);
+}
+
+/* Estilos para la sección de Historia */
+#historia {
+  background: url("./img/siaf.jfif");
+  padding: 3em 1em;
+}
+
+#historia h2 {
+  font-size: 2em;
+  color: #2c5f8a;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#historia p {
+  font-size: 1.1em;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 1.5em;
+}
+
+.history-section {
+  background: #ffffff;
+  margin-bottom: 2em;
+  padding: 1.5em;
+  border-left: 4px solid #2c5f8a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.history-section:hover {
+  transform: translateY(-3px);
+}
+
+.history-section h3 {
+  font-size: 1.5em;
+  color: #2c5f8a;
+  margin-bottom: 0.5em;
+}
+
+.history-section p {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilos para el Carrusel Circular */
+.carousel-section {
+  background-color: #f9f9f9;
+  padding: 3em 0;
+  text-align: center;
+}
+
+.carousel-section h2 {
+  font-size: 2em;
+  color: #2c5f8a;
+  margin-bottom: 1em;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+/* Posiciones de las imágenes en el carrusel circular */
+.carousel-item:nth-child(1) {
+  transform: rotateY(0deg) translateZ(150px);
+}
+
+.carousel-item:nth-child(2) {
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.carousel-item:nth-child(3) {
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+.carousel-item:nth-child(4) {
+  transform: rotateY(270deg) translateZ(150px);
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+/* Estilos generales del carrusel */
+.carrusel-1 {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    border-radius:50px;
+    overflow: hidden;
+}
+
+.imagenes {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+    transition: transform 0.5s ease;
 }
 
-#contenedor-2 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-    height: 400px;
-    background-color: #ffffff;
-    margin: 20px 0;
+.imagenes img {
+    max-width: 100%;
+    display: block;
 }
 
-#contenedor-3, #contenedor-4, #contenedor-5 {
-    width: 300px;
-    height: 300px;
-    background-color: #DF01D7;
-    color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
 }
 
-#contenedor-3 {
-    background-image: url("./img/campi.jpg");
+.prev {
+    left: 10px;
 }
 
-#contenedor-4 {
-    background-image: url("./img/recreacion.jpg");
-}
-
-#contenedor-5 {
-    background-image: url("./img/atletismo.jpg");
-}
-
-#menu {
-    text-align: center;
-    background-color: #56dae4;
-    padding: 10px 0;
-}
-
-#lista-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-item {
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.menu-item:hover {
-    background-color: #39a1e0;
-}
-
-.enlace-menu {
-    text-decoration: none;
+.next {
+    right: 10px;
 }
